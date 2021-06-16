@@ -1,0 +1,1446 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#"
+     xml:base="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#hasAuthor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#hasAuthor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Educational_book"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#hasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#hasGenre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Educational_book"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#hasStatus -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#hasStatus">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Educational_book"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Status"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#hasTags -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#hasTags">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Educational_book"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Genre"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#hasDescription">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Educational_book"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#hasFavorites -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#hasFavorites">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Educational_book"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#hasName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Author"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Educational_book"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Genre"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#hasNumberOfPages -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#hasNumberOfPages">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Educational_book"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#hasRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#hasRate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Educational_book"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#hasURL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#hasURL">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Author"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Educational_book"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#hasViews -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#hasViews">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Educational_book"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Author -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Author">
+        <rdfs:comment xml:lang="en">Class description author</rdfs:comment>
+        <rdfs:label xml:lang="en">Author</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Bad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Bad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Boevik -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Boevik">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Book -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Book">
+        <rdfs:comment xml:lang="en">Class describe books</rdfs:comment>
+        <rdfs:label xml:lang="en">Book</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Detektivy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Detektivy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Educational_book -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Educational_book">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Book"/>
+        <rdfs:comment xml:lang="en">Class describe education book</rdfs:comment>
+        <rdfs:label xml:lang="en">Education book</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Book"/>
+        <rdfs:comment xml:lang="en">Class describe entertaiment books</rdfs:comment>
+        <rdfs:label xml:lang="en">Entertaiment book</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Fanfik -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Fanfik">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Fantastika -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Fantastika">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Fentezi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Fentezi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Genre">
+        <rdfs:comment xml:lang="en">Class describe Genre book</rdfs:comment>
+        <rdfs:label xml:lang="en">Genre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Good -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Good">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Istoricheskiy_roman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Istoricheskiy_roman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Jenskaya_proza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Jenskaya_proza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Litrpg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Litrpg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Lyubovnye_romany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Lyubovnye_romany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Mistikaujasy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Mistikaujasy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Molodejnaya_proza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Molodejnaya_proza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Popadancy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Popadancy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Proza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Proza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Raznoe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Raznoe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Satisfactory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Satisfactory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Status -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Status"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags">
+        <rdfs:comment xml:lang="en">Class describe tags books</rdfs:comment>
+        <rdfs:label xml:lang="en">Tags</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Trillery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Trillery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Bad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Bad">
+        <hasStatus rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Магистраль_смерти_1"/>
+        <hasStatus rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Пересекая_границу_реальности_Книга_3"/>
+        <hasStatus rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Чернокнижница"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Boevik -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Boevik">
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Боевик</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Detektivy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Detektivy">
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Детективы</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Fanfik -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Fanfik">
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Фанфик</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Fantastika -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Fantastika">
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Фантастика</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Fentezi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Fentezi">
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Фэнтези</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Good -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Good">
+        <hasStatus rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Дракон_с_подарком_Королевская_академия_Драко"/>
+        <hasStatus rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Искажающие_Реальность_8"/>
+        <hasStatus rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Тайный_наследник_миллиардера"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Istoricheskiy_roman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Istoricheskiy_roman">
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Исторический роман</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Jenskaya_proza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Jenskaya_proza">
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Женский роман</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Litrpg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Litrpg">
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ЛитРПГ</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Lyubovnye_romany -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Lyubovnye_romany">
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Любовные романы</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Mistikaujasy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Mistikaujasy">
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Мистика/Ужасы</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Molodejnaya_proza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Molodejnaya_proza">
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Молодежная проза</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Popadancy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Popadancy">
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Попаданцы</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Proza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Proza">
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Проза</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Raznoe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Raznoe">
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Разное</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Satisfactory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Satisfactory">
+        <hasStatus rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Двойняшки_для_Медведя"/>
+        <hasStatus rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Искушение_невинностью"/>
+        <hasStatus rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Лекарь_возлюбленный"/>
+        <hasStatus rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Невинность_в_жертву"/>
+        <hasStatus rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Попаданка_в_Академии_Драконов_или_Допросить_Хомяка"/>
+        <hasStatus rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Таблеточку_Ваше_Темнейшество"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Trillery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Trillery">
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Триллеры</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Алекс_Найт -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Алекс_Найт">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Author"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Попаданка_в_Академии_Драконов_или_Допросить_Хомяка"/>
+        <hasURL>https://litnet.com/ru/aleks-nait-u357766</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Валерий_Атамашкин -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Валерий_Атамашкин">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Author"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Магистраль_смерти_1"/>
+        <hasURL>https://litnet.com/ru/valerii-atamashkin-u17592</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Дана_Стар -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Дана_Стар">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Author"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Невинность_в_жертву"/>
+        <hasURL>https://litnet.com/ru/dana-star-u398226</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Двойняшки_для_Медведя -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Двойняшки_для_Медведя">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Raznoe"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Satisfactory"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Raznoe"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Двойняшки для Медведя
+Юлия Созонова
+                - Потапов Максим Андреевич?
+- Да?
+- К нам в больницу поступила Войнова Ирина Геннадьевна. Вы ее знаете?
+Войнова, Войнова, Войнова... Кажется, так звали одну из моих быв... подробнее
+В тексте есть:  сложные отношения, властный герой, вредная героиня
+
+
+
+                        В процессе: 17 Мая
+                        75 стр
+
+
+442829
+7918
+
+
+</hasDescription>
+        <hasFavorites rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7918</hasFavorites>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Двойняшки для Медведя</hasName>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</hasNumberOfPages>
+        <hasRate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2334</hasRate>
+        <hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://litnet.com/ru/book/dvoinyashki-dlya-medvedya-b309618</hasURL>
+        <hasViews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">442829</hasViews>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Дина_Исаева -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Дина_Исаева">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Author"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Тайный_наследник_миллиардера"/>
+        <hasURL>https://litnet.com/ru/dina-isaeva-u5424382</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Дракон_с_подарком_Королевская_академия_Драко -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Дракон_с_подарком_Королевская_академия_Драко">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Good"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Lyubovnye_romany"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Lyubovnye_romany"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Дракон с подарком. Королевская академия Драко
+Светлана Суббота
+                ☘️ Дракон - не подарок, а пара тонн яростной мощи, бесконечной самоуверенности и хищной наглости. Король и королева желают познакомиться с лучшими выпускниками ак... подробнее
+В тексте есть:  драконы, академия, романтические истории с юмором субботы
+
+
+
+                        В процессе: 17 Мая
+                        20 стр
+
+
+307092
+26696
+
+
+</hasDescription>
+        <hasFavorites rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26696</hasFavorites>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Дракон с подарком. Королевская академия Драко</hasName>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hasNumberOfPages>
+        <hasRate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5521</hasRate>
+        <hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://litnet.com/ru/book/drakon-s-podarkom-korolevskaya-akademiya-drako-b339578</hasURL>
+        <hasViews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">307092</hasViews>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Искажающие_Реальность_8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Искажающие_Реальность_8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Fantastika"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Good"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Litrpg"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Fantastika"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Litrpg"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Искажающие Реальность-8
+Михаил Атаманов
+                Вторжение агрессоров из другой галактики не остановить. &quot;Композит&quot; захватывает систему за системой, уничтожая всё живое, и не видно силы, способной противостоять е... подробнее
+В тексте есть:  звездолеты, сражения на земле и в космосе, космические расы
+
+
+
+                        В процессе: 17 Мая
+                        288 стр
+
+
+613104
+7898
+
+
+</hasDescription>
+        <hasFavorites rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7898</hasFavorites>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Искажающие Реальность-8</hasName>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">288</hasNumberOfPages>
+        <hasRate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6993</hasRate>
+        <hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://litnet.com/ru/book/iskazhayushchie-realnost-8-b306132</hasURL>
+        <hasViews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">613104</hasViews>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Искушение_невинностью -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Искушение_невинностью">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Istoricheskiy_roman"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Satisfactory"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Istoricheskiy_roman"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Искушение невинностью
+Селена Касс
+                Невеста, которая так и не стала женой. Всего одна ночь, и жизнь Анны разрушена. Теперь, по воле закона девушке предстоит тяжелое путешествие в опасное место, где ей п... подробнее
+В тексте есть:  месть и жестокость, страсть  любовь  принуждение, жестокий и грубый главный герой
+
+
+
+                        В процессе: 16 Мая
+                        493 стр
+
+
+485054
+5880
+
+
+</hasDescription>
+        <hasFavorites rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5880</hasFavorites>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Искушение невинностью</hasName>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">493</hasNumberOfPages>
+        <hasRate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1515</hasRate>
+        <hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://litnet.com/ru/book/iskushenie-nevinnostyu-b205161</hasURL>
+        <hasViews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">485054</hasViews>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Лекарь_возлюбленный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Лекарь_возлюбленный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Mistikaujasy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Satisfactory"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Mistikaujasy"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Лекарь-возлюбленный
+Маша Моран
+                Меня влечет к нему. Неудержимо, дико, без шанса на спасение. Я – мужчина. Но и он тоже. И сколько бы я ни сопротивлялся одержимой страсти, перед ним невозможно устоять... подробнее
+В тексте есть:  гендерная интрига, любовь и страсть, запретная любовь
+
+
+
+                        В процессе: 17 Мая
+                        276 стр
+
+
+140601
+2709
+
+
+</hasDescription>
+        <hasFavorites rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2709</hasFavorites>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Лекарь-возлюбленный</hasName>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">276</hasNumberOfPages>
+        <hasRate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1736</hasRate>
+        <hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://litnet.com/ru/book/lekar-vozlyublennyi-b293205</hasURL>
+        <hasViews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140601</hasViews>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Лира_Алая -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Лира_Алая">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Author"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Таблеточку_Ваше_Темнейшество"/>
+        <hasURL>https://litnet.com/ru/lira-alaya-u530349</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Магистраль_смерти_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Магистраль_смерти_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Bad"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Boevik"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Boevik"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Магистраль смерти-1
+Валерий Атамашкин
+                Наши дни.
+Мент, ветеран Афгана. Подкаблучник с беременной женой. Беглый зэк и дальнобойщик-наркоман. Той ночью вся эта компашка сталкивается с друг другом вблизи НИ... подробнее
+В тексте есть:  зомби, вирус, зомбиапокалипсис
+
+
+
+                        Полный текст 
+                        183 стр
+
+
+113547
+2677
+
+
+</hasDescription>
+        <hasFavorites rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2677</hasFavorites>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Магистраль смерти-1</hasName>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">183</hasNumberOfPages>
+        <hasRate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">421</hasRate>
+        <hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://litnet.com/ru/book/magistral-smerti-1-b305830</hasURL>
+        <hasViews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">113547</hasViews>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Маша_Моран -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Маша_Моран">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Author"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Лекарь_возлюбленный"/>
+        <hasURL>https://litnet.com/ru/masha-moran-u450570</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Михаил_Атаманов -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Михаил_Атаманов">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Author"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Искажающие_Реальность_8"/>
+        <hasURL>https://litnet.com/ru/mihail-atamanov-u2909</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Невинность_в_жертву -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Невинность_в_жертву">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Jenskaya_proza"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Proza"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Satisfactory"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Jenskaya_proza"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Proza"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Невинность в жертву
+Дана Стар
+                — Как ты посмела! — мать встряхивает сестру за плечи. — Ты больше не девственница! Господин Айдаров тебя замуж не возьмет! Условие было — невеста невинна.
+— Прости... подробнее
+В тексте есть:  вынужденный брак, властный герой, эмоции на пределе
+
+
+
+                        В процессе: 17 Мая
+                        79 стр
+
+
+832627
+14447
+
+
+</hasDescription>
+        <hasFavorites rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14447</hasFavorites>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Невинность в жертву</hasName>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79</hasNumberOfPages>
+        <hasRate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3361</hasRate>
+        <hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://litnet.com/ru/book/nevinnost-v-zhertvu-b328934</hasURL>
+        <hasViews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">832627</hasViews>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Пересекая_границу_реальности_Книга_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Пересекая_границу_реальности_Книга_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Bad"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Fanfik"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Fanfik"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Пересекая границу реальности. Книга 3
+Элиана Никитина
+                БЕСПЛАТНО. КНИГА .3
+Провидение, случай, или сама судьба привели нашу современницу  в мир, что так похож на родную Землю. Вот только там, вместо машин, по дорогам спеша... подробнее
+В тексте есть:  мжм, драконы и эльфы, драконье гнездо
+
+
+
+                        В процессе: 14 Мая
+                        28 стр
+
+
+10708
+2309
+
+
+</hasDescription>
+        <hasFavorites rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2309</hasFavorites>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Пересекая границу реальности. Книга 3</hasName>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</hasNumberOfPages>
+        <hasRate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">448</hasRate>
+        <hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://litnet.com/ru/book/peresekaya-granicu-realnosti-kniga-3-b333651</hasURL>
+        <hasViews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10708</hasViews>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Попаданка_в_Академии_Драконов_или_Допросить_Хомяка -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Попаданка_в_Академии_Драконов_или_Допросить_Хомяка">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Detektivy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Satisfactory"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Detektivy"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Попаданка в Академии Драконов, или Допросить Хомяка
+Алекс Найт
+                Житья уже нет с этим взрывным магическим даром! И Академия Драконов — моя последняя надежда. План прост: приехать в столицу, снять временное жильё, сдать экзамены. И... подробнее
+В тексте есть:  магическая академия, истинная пара, магический детектив
+
+
+
+                        В процессе: 18 Мая
+                        80 стр
+
+
+232242
+10533
+
+
+</hasDescription>
+        <hasFavorites rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10533</hasFavorites>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Попаданка в Академии Драконов, или Допросить Хомяка</hasName>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</hasNumberOfPages>
+        <hasRate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1321</hasRate>
+        <hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://litnet.com/ru/book/popadanka-v-akademii-drakonov-ili-doprosit-xomyaka-b336596</hasURL>
+        <hasViews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">232242</hasViews>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Светлана_Суббота -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Светлана_Суббота">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Author"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Дракон_с_подарком_Королевская_академия_Драко"/>
+        <hasURL>https://litnet.com/ru/svetlana-subbota-u320771</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Селена_Касс -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Селена_Касс">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Author"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Искушение_невинностью"/>
+        <hasURL>https://litnet.com/ru/selena-kass-u36769</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Таблеточку_Ваше_Темнейшество -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Таблеточку_Ваше_Темнейшество">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Fentezi"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Popadancy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Satisfactory"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Fentezi"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Popadancy"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Таблеточку, Ваше Темнейшество?
+Лира Алая
+                Прислонилась к таблеточной машине и попала в другой мир? Не теряйся! Провизор ты или кто? Зря латынь учила, что ли? Сойдёшь за ведьму! Аптеку откроешь.
+Светлые тут, ко... подробнее
+В тексте есть:  бытовое фэнтези, неунывающая героиня, говорящая таблеточная машина
+
+
+
+                        В процессе: 17 Мая
+                        58 стр
+
+
+300029
+19825
+
+
+</hasDescription>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Таблеточку, Ваше Темнейшество?
+Лира Алая
+                Прислонилась к таблеточной машине и попала в другой мир? Не теряйся! Провизор ты или кто? Зря латынь учила, что ли? Сойдёшь за ведьму! Аптеку откроешь.
+Светлые тут, ко... подробнее
+В тексте есть:  бытовое фэнтези, неунывающая героиня, говорящая таблеточная машина
+
+
+
+                        В процессе: 17 Мая
+                        58 стр
+
+
+300032
+19825
+
+
+</hasDescription>
+        <hasFavorites rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19825</hasFavorites>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Таблеточку, Ваше Темнейшество?</hasName>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58</hasNumberOfPages>
+        <hasRate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2405</hasRate>
+        <hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://litnet.com/ru/book/tabletochku-vashe-temneishestvo-b333552</hasURL>
+        <hasViews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300029</hasViews>
+        <hasViews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300032</hasViews>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Тайный_наследник_миллиардера -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Тайный_наследник_миллиардера">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Good"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Molodejnaya_proza"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Molodejnaya_proza"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Тайный наследник миллиардера
+Дина Исаева
+                Артур Манапов стал моим первым мужчиной, а после сказал, что мы не подходим друг другу и заставил выпить таблетки, чтобы я не забеременела.
+С тех пор прошло три года.... подробнее
+В тексте есть:  властный герой, ребенок, встреча через время
+
+
+
+                        В процессе: 17 Мая
+                        103 стр
+
+
+1633824
+20336
+
+
+</hasDescription>
+        <hasFavorites rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20336</hasFavorites>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Тайный наследник миллиардера</hasName>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">103</hasNumberOfPages>
+        <hasRate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7913</hasRate>
+        <hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://litnet.com/ru/book/tainyi-naslednik-milliardera-b332186</hasURL>
+        <hasViews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1633824</hasViews>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Чернокнижница -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Чернокнижница">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Bad"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Entertainment_book"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Trillery"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Trillery"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Чернокнижница
+Яна Мелевич
+                ОКОНЧАНИЕ ПОДПИСКИ
+За колдовство меня изгнали в мир без магии. Теперь я — Елена Молчанова, дипломированный экстрасенс с кровожадным кроликом-демоном и ненормальн... подробнее
+В тексте есть:  темное фэнтези, сложные отношения, предательство и месть
+
+
+
+                        В процессе: 17 Мая
+                        235 стр
+
+
+23626
+1303
+
+
+</hasDescription>
+        <hasFavorites rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1303</hasFavorites>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Чернокнижница</hasName>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">235</hasNumberOfPages>
+        <hasRate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">241</hasRate>
+        <hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://litnet.com/ru/book/chernoknizhnica-b312180</hasURL>
+        <hasViews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23626</hasViews>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Элиана_Никитина -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Элиана_Никитина">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Author"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Пересекая_границу_реальности_Книга_3"/>
+        <hasURL>https://litnet.com/ru/eliana-nikitina-u273281</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Юлия_Созонова -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Юлия_Созонова">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Author"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Двойняшки_для_Медведя"/>
+        <hasURL>https://litnet.com/ru/yuliya-sozonova-u24824</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Яна_Мелевич -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Яна_Мелевич">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Author"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Чернокнижница"/>
+        <hasURL>https://litnet.com/ru/yana-melevich-u38627</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#академия -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#академия">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Дракон_с_подарком_Королевская_академия_Драко"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#академия</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#бытовое_фэнтези -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#бытовое_фэнтези">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Таблеточку_Ваше_Темнейшество"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#бытовое_фэнтези</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#вирус -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#вирус">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Магистраль_смерти_1"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#вирус</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#властный_герой -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#властный_герой">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Двойняшки_для_Медведя"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Невинность_в_жертву"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Тайный_наследник_миллиардера"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#властный_герой</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#вредная_героиня -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#вредная_героиня">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Двойняшки_для_Медведя"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#вредная_героиня</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#встреча_через_время -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#встреча_через_время">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Тайный_наследник_миллиардера"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#встреча_через_время</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#вынужденный_брак -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#вынужденный_брак">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Невинность_в_жертву"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#вынужденный_брак</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#гендерная_интрига -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#гендерная_интрига">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Лекарь_возлюбленный"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#гендерная_интрига</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#говорящая_таблеточная_машина -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#говорящая_таблеточная_машина">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Таблеточку_Ваше_Темнейшество"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#говорящая_таблеточная_машина</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#драконы -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#драконы">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Дракон_с_подарком_Королевская_академия_Драко"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#драконы</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#драконы_и_эльфы -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#драконы_и_эльфы">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Пересекая_границу_реальности_Книга_3"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#драконы_и_эльфы</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#драконье_гнездо -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#драконье_гнездо">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Пересекая_границу_реальности_Книга_3"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#драконье_гнездо</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#жестокий_и_грубый_главный_герой -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#жестокий_и_грубый_главный_герой">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Искушение_невинностью"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#жестокий_и_грубый_главный_герой</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#запретная_любовь -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#запретная_любовь">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Лекарь_возлюбленный"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#запретная_любовь</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#звездолеты -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#звездолеты">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Искажающие_Реальность_8"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#звездолеты</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#зомби -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#зомби">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Магистраль_смерти_1"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#зомби</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#зомбиапокалипсис -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#зомбиапокалипсис">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Магистраль_смерти_1"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#зомбиапокалипсис</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#истинная_пара -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#истинная_пара">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Попаданка_в_Академии_Драконов_или_Допросить_Хомяка"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#истинная_пара</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#космические_расы -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#космические_расы">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Искажающие_Реальность_8"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#космические_расы</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#любовь_и_страсть -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#любовь_и_страсть">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Лекарь_возлюбленный"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#любовь_и_страсть</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#магическая_академия -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#магическая_академия">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Попаданка_в_Академии_Драконов_или_Допросить_Хомяка"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#магическая_академия</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#магический_детектив -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#магический_детектив">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Попаданка_в_Академии_Драконов_или_Допросить_Хомяка"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#магический_детектив</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#месть_и_жестокость -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#месть_и_жестокость">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Искушение_невинностью"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#месть_и_жестокость</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#мжм -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#мжм">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Пересекая_границу_реальности_Книга_3"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#мжм</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#неунывающая_героиня -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#неунывающая_героиня">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Таблеточку_Ваше_Темнейшество"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#неунывающая_героиня</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#предательство_и_месть -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#предательство_и_месть">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Чернокнижница"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#предательство_и_месть</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#ребенок -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#ребенок">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Тайный_наследник_миллиардера"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#ребенок</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#романтические_истории_с_юмором_субботы -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#романтические_истории_с_юмором_субботы">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Дракон_с_подарком_Королевская_академия_Драко"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#романтические_истории_с_юмором_субботы</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#сложные_отношения -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#сложные_отношения">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Двойняшки_для_Медведя"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Чернокнижница"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#сложные_отношения</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#сражения_на_земле_и_в_космосе -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#сражения_на_земле_и_в_космосе">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Искажающие_Реальность_8"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#сражения_на_земле_и_в_космосе</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#страсть_любовь_принуждение -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#страсть_любовь_принуждение">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Искушение_невинностью"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#страсть_любовь_принуждение</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#темное_фэнтези -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#темное_фэнтези">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Чернокнижница"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#темное_фэнтези</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#эмоции_на_пределе -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#эмоции_на_пределе">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Tags"/>
+        <hasTags rdf:resource="http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#Невинность_в_жертву"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/vasilii/ontologies/2021/3/book_onto#эмоции_на_пределе</hasName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
